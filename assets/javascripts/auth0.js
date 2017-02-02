@@ -52,10 +52,8 @@
         lock.show({
           popup:        true,
           responseType: 'code',
-          auth: {
-            params: {
+          authParams: {
               state: 'forum'
-            }
           },
           callbackURL:  Discourse.SiteSettings.auth0_callback_url
         });
@@ -81,10 +79,8 @@
             mode:         'signup',
             popup:        true,
             responseType: 'code',
-            auth: {
-              params: {
-                state: 'forum'
-              }
+            authParams: {
+              state: 'forum'
             },
             callbackURL:  Discourse.SiteSettings.auth0_callback_url
           });
