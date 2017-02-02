@@ -9,7 +9,7 @@
 
   var lock;
 
-  var script_url = 'https://cdn.auth0.com/js/lock/10.7.2/lock.min.js';
+  var script_url = 'https://cdn.auth0.com/js/lock-9.2.js';
 
   appendScript(script_url, function () {
     var checkInterval = setInterval(function () {
