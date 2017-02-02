@@ -52,6 +52,11 @@
         lock.show({
           popup:        true,
           responseType: 'code',
+          auth: {
+            params: {
+              state: 'forum'
+            }
+          },
           callbackURL:  Discourse.SiteSettings.auth0_callback_url
         });
 
